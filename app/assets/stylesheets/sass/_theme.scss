@@ -1,0 +1,46 @@
+@import "_abase.scss";
+
+.home-icon{
+    display: block;
+    background:$path no-repeat  -85px -21px;
+    width:55px;
+    height:97px;
+    margin: -55px 0 0 0;
+}
+
+.result-box{
+    display: block;
+    background-color:#CCFFFF;
+    width:50px;
+    height:55px;
+    padding: 20px;
+    border: 2px;
+    border-radius: 10px;
+}
+
+.cl{
+   clear:both;
+   display: block;
+   margin-top:10px;
+}
+
+.home-bg{
+	background: url(/assets/home/bg.png) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.home{
+	h1{
+		margin-top: 100px;
+		text-align: center;
+	}
+	h3{
+		text-align: center;
+		font-weight: 300;
+		color: $blue;
+	}
+	
+}

@@ -5,6 +5,10 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'welcome#index'
 
+  get "url_shortner/index" => "url_shortner#index", :as => :url_shortner
+  post "url_shortner/shorten_url" => "url_shortner#shorten_url", :as => :shorten_url
+  get "/:random" => "url_shortner#original_redirect"
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

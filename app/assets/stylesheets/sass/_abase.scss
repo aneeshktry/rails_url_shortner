@@ -1,0 +1,101 @@
+$path: url("/assets/sprite.png");
+/*color section*/
+$green:#6ad289;
+$blue:#3f8abf;
+$red:#eb4a33;
+$dark:#22282f;
+$grey:#5a6772;
+$l-grey:#7f8c8d;
+$yellow:#f8f0a9;
+$border:#d6d8dc;
+/*end color section*/
+$base:21px;
+/*end color section*/
+@function em($target, $context: $base-font-size) {
+@return $target / $context + 0em;
+@if $target == 0 { @return 0; }
+}
+*{
+ box-sizing:border-box;
+}
+figure{
+	margin:0;
+}
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #ebedf3;
+	-webkit-font-smoothing: antialiased !important;
+	-webkit-text-stroke:.1px;
+}
+
+
+
+
+
+.btn{
+	@extend .no-stroke;
+}
+
+
+/* font color */
+.f-blue{
+	color:$blue !important;
+}
+.f-dark{
+	color:$dark !important;
+}
+.f-red{
+	color:$red !important;
+}
+.f-green{
+	color:$green !important;
+}
+
+/* /font color */
+
+
+/*global css*/
+.w70{
+	width:70% !important;
+	@extend .clearfix;
+}
+.w100{
+	width:100%!important;
+	@extend .clearfix;
+}
+.w90{
+	width:90%!important;
+	@extend .clearfix;
+}
+.w80{
+	width:80% !important;
+	@extend .clearfix;
+}
+.w70{
+	width:70% !important;
+	@extend .clearfix;
+}
+.w60{
+	width:60% !important;
+	@extend .clearfix;
+}
+.w50{
+	width:50% !important;
+	@extend .clearfix;
+}
+.w40{
+	width:40%!important;
+	@extend .clearfix;
+}
+.w30{
+	width:30%!important;
+	@extend .clearfix;
+}
+.w20{
+	width:20%!important;
+	@extend .clearfix;
+}
+.w10{
+	width:10%!important;
+	@extend .clearfix;
+}
